@@ -83,7 +83,11 @@
     <div class="nav-item">Option 4</div>
   </div>
   <div class="grid-container">
+    
     <div class="grid">
+      <div class="grid-item">
+        <pie-chart :data="[['Blueberry', 44], ['Strawberry', 23]]"></pie-chart>
+      </div>
       <div class="grid-item">
         <div class="grid-item-title">Soil Moisture</div>
         <div class="grid-item-data">{{parseFloat(state.data.soilMoisture*100).toFixed(2)}}%</div>
